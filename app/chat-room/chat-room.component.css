@@ -1,0 +1,48 @@
+.main{
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+.userListWrap {
+    background-color: #2A2845;
+    color: #fff;
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    flex: 1;
+    order: 1;
+    padding:20px 0px 40px 30px;
+    border-right: 1px solid #222;
+}
+
+.feedWrap {
+    background-color: #fff;
+    background: 
+        linear-gradient(181deg, rgba(111, 205, 255, 0.226), rgba(0, 0, 0, 0.199)),
+        url('../../assets/img/chat-bg.jpg') center center no-repeat;;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    flex: 5;
+    order: 2;
+    overflow-y: scroll;
+    padding:20px 0px 0px 24px;
+    height: 100%;
+}
+
+.chatFormWrap {
+    display: flex;
+    height: 50px;
+    background-color: #eee;
+    z-index: 3;
+}
+
+#scroll-style::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+app-user-list {
+    width: 100%;
+}
