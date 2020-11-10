@@ -1,0 +1,39 @@
+  
+<div class="container">
+    <div class="signUpCard">
+     <form #signupForm="ngForm">
+      <div class="image-wrap">
+        <img src="assets/img/add.svg" alt="" class="image">
+      </div>
+      <h2 class="heading">Sign Up</h2>
+  
+
+        <input 
+         type="email" name="email"
+         placeholder="Enter your email address" 
+         [(ngModel)]="email" class="formInput"
+         maxlength="60" required/>
+  
+        <input 
+          type="password" name="password"
+          placeholder="Choose a password" 
+          [(ngModel)]="password" class="formInput" 
+          required/>
+  
+        <input 
+          name="displayName"
+          placeholder="Enter a display name" 
+          [(ngModel)]="displayName" class="formInput"
+          maxlength="12" required/>
+  
+        <button [disabled]="!signupForm.form.valid" 
+                type="submit" (click)="signUp()"
+                class="btn" id="btn-signUp">
+                Sign Up
+        </button>
+        <button id="btn-login" >
+          Already have an account? Login here!
+      </button>
+      </form>
+    </div>
+  </div>

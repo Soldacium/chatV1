@@ -1,0 +1,128 @@
+.container{
+  overflow:hidden;
+  background-color: #343434;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='Artboard-5' fill='%236d6d6d' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M6 18h12V6H6v12zM4 4h16v16H4V4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrap{
+  width: 7rem;
+  height: 7rem;
+  border: 0.5rem rgba(41, 41, 41, 0.5) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  background-color: rgb(56, 56, 56);
+  position: absolute;
+  left: 50%;
+  top: -3rem;
+  transform: translate(-50%,0);
+}
+.image{
+
+  width: 4rem;
+  height: 4rem;
+  filter: invert();
+}
+
+.signUpCard{
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: rgb(43, 43, 43);
+  width: calc(20% + 250px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 7rem 3rem;
+  box-shadow: 0 1px 3px 1px rgba(0,0,0,0.17), 0 1px 2px 1px rgba(0, 0, 0, 0.096);
+}
+
+.formInput{
+  position: relative;
+  width: 80%;
+  height: 40px;
+  border-radius:0.5rem;
+  background:rgb(56, 56, 56);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.103) inset;
+  padding: 0.5rem 1rem;
+  font-size:1em;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.btn{
+  margin: auto;
+  margin-top: 3rem;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.17), 0 1px 2px rgba(0,0,0,0.24);
+  transition: ease-in 0.2s;
+}
+
+#btn-signUp{
+  background-color:#ff0077;
+  transition: 0.2s;
+  margin-top: 1rem;
+  
+}
+
+#btn-signUp:hover{
+  background-color:#4a486500;
+  background-color:#ff2aad;
+  transition: ease-in 0.2s;
+  cursor: pointer;
+}
+#btn-signUp:disabled{
+  background-color:rgb(150, 150, 150);
+  color: rgba(27, 27, 27, 0.274);
+  cursor: default;
+}
+
+#btn-login{
+  background-color:#2a284500;
+  color: rgba(255, 255, 255, 0.164);
+  transition: 0.2s;
+  font-size: 0.8rem;
+ 
+  cursor: pointer;
+  margin: 0 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#btn-login:hover{
+  background-color:#4a486500;
+  color: #ff0077;
+  transition: ease-in 0.2s;
+}
+
+
+h2{
+    text-align: center;
+    height: 2em;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.label{
+    font-size: 0.9em;
+}

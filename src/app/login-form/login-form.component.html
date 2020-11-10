@@ -1,0 +1,31 @@
+  
+<div class="container">
+  <div class="loginCard">
+    <div class="image-wrap">
+      <img src="assets/img/key.svg" alt="" class="image">
+    </div>
+    
+    <h2 class="heading">Login</h2>
+    <input 
+      [(ngModel)]="email"
+      type="email" 
+      name="email" 
+      class="formInput" 
+      placeholder="Username"/>
+    <input type="password" 
+      [(ngModel)]="password"
+      name="password" 
+      class="formInput"
+      (keyup.enter)='login()' 
+      placeholder="Password"/>
+    <button class="btn" 
+            id="btn-login" 
+            (click)="login()">
+            Join chat
+    </button>
+
+    <button id="btn-signUp" >
+        Don't have an account? Sign up here!
+    </button>
+  </div>
+</div>

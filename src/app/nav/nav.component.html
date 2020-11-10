@@ -1,0 +1,23 @@
+<div class="navBar">
+
+  <img id="logo" src="assets/img/abstract2.svg"  routerLink="/chat">
+
+  <div class="links">
+    <span>
+        <!-- login() here makes little sense, would probably be better to jsut routerlink-->
+      <a *ngIf="!(user|async)?.uid" href="#" (click)="login()" [ngClass]="(router.isActive('/login',true))?'active':'naah'">Login</a>
+    </span>
+    <span>
+      <a *ngIf="!(user|async)?.uid" routerLink="/signup" [ngClass]="(router.isActive('/signup',true))?'active':'naah'">Sign Up</a>
+    </span>
+    <span>
+      <span id="userEmail" *ngIf="(user|async)?.uid" [ngClass]="(router.isActive('/chat',true))?'active':'naah'">Hello, <b>{{userEmail}}</b> </span>
+    </span>
+    <span>
+      <a *ngIf="(user|async)?.uid" href="#" routerLink="/chat" [ngClass]="(router.isActive('/chat',true))?'active':'naah'">Chat</a>
+    </span>
+    <span>
+      <a *ngIf="(user|async)?.uid" href="#" (click)="logout()">Logout</a>
+    </span>
+  </div>
+</div>

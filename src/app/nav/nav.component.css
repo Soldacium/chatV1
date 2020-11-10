@@ -1,0 +1,65 @@
+.navBar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(41, 41, 41);
+    color: rgb(224, 224, 224);
+}
+
+#logo{
+    display: inline-block;
+    background:  no-repeat;
+    background-size: cover;
+    margin: 12px 10px 12px 32px;
+    width: 55px;
+    height: 55px;
+    min-width: 60px;
+    filter: invert();
+    cursor: pointer;
+}
+
+#heading{
+    flex: 4;
+    padding: 1rem 2rem;
+    height: 60px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.links{
+    padding-right: 2rem;
+    white-space: nowrap;
+    display: block;
+    margin-left: auto;
+}
+
+#heading > a{
+    text-decoration: none;
+    color: rgb(224, 224, 224);
+}
+
+.links a{
+    color: rgb(224, 224, 224);
+    text-decoration: none;
+    transition: ease-in 0.2s;
+    padding: 0.5rem 2rem;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+}
+
+.links a:hover {
+    color: #1E88E5;
+    transition: ease-in 0.2s;
+}
+.links a.active{
+    background-color: rgb(56, 56, 56);
+}
+
+#userEmail {
+    font-size: 1.3rem;
+    padding: 0.5rem 2rem;
+}

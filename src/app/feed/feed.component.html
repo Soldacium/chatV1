@@ -1,0 +1,7 @@
+
+<div class="feed">
+    <!-- async subscribes in html instead of adding .subscribe in .ts-->
+    <div *ngFor='let message of feed | async' class='message'>
+        <app-message [chatMessage]=message></app-message>
+    </div>
+</div>
